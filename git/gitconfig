@@ -1,0 +1,36 @@
+#[include] path = ""
+
+[user]
+	name = siewertj
+	email = malgarith@outlook.com
+
+[core]
+	editor = 'vim'
+	autocrlf = false
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = true
+
+[color "status"]
+	added = green bold
+	changed = red bold
+	untracked = red bold
+	
+[url "https://github.com/"]
+	insteadOf = github::
+
+[alias]
+	showtree = "log --graph --all --date=format:'%Y %b %d %H:%M' --pretty=format:'%<(12)%Cred%h%Creset%Cblue%d%Creset%s - %ad %an'"
+	#dostuff = "!git status ; git showtree"
+
+[rebase]
+	autosquash = true

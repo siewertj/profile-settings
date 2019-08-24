@@ -1,0 +1,48 @@
+// Place your settings in this file to overwrite the default settings
+{
+// Look and Feel
+	"workbench.colorTheme": "Andromeda",
+	"workbench.editor.showIcons": false,
+
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"editor.renderWhitespace": "boundary",
+
+	"editor.fontFamily": "Anonymous Pro",
+	"editor.fontSize": 14,
+	"editor.cursorStyle": "line",
+
+	"files.hotExit": "onExitAndWindowClose",
+	"files.exclude": {
+		"**/.git":true
+	},
+
+	"powershell.powerShellExePath": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
+	"terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
+	"workbench.startupEditor": "newUntitledFile",
+	"python.linting.enabled": false,
+
+// GitLens Settings
+	"gitlens.views.repositories.location": "gitlens",
+	"gitlens.views.fileHistory.location": "gitlens",
+	"gitlens.views.lineHistory.location": "gitlens",
+	"gitlens.views.compare.location": "gitlens",
+	"gitlens.views.search.location": "gitlens",
+
+// VIM Settings
+	"vim.incsearch": true,
+	"vim.hlsearch": true,
+	"vim.showcmd": true,
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{ "before": ["<C-n>"],
+			"commands": [ ":set hlsearch!",] },
+	],
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{ "before": [">"],
+			"commands": ["editor.action.indentLines"] },
+
+		{ "before": ["<"],
+			"commands": ["editor.action.outdentLines"] }
+	],
+	//"editor.lineNumbers": "relative", // "on" | "off"
+}

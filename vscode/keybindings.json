@@ -1,0 +1,26 @@
+// Place your key bindings in this file to override the defaults
+[
+	// Some window navigation here
+	{ "key": "ctrl+h",
+	  "command": "workbench.action.navigateLeft" },
+	{ "key": "ctrl+l",
+	  "command": "workbench.action.navigateRight" },
+	{ "key": "ctrl+k",
+	  "command": "workbench.action.navigateUp" },
+	{ "key": "ctrl+j",
+		"command": "workbench.action.navigateDown" },
+
+	{ "key": "ctrl+alt+h",
+		"command": "workbench.action.moveEditorToLeftGroup" },
+	{ "key": "ctrl+alt+l",
+		"command": "workbench.action.moveEditorToRightGroup" },
+	{ "key": "ctrl+alt+k",
+		"command": "workbench.action.moveEditorToAboveGroup" },
+	{ "key": "ctrl+alt+j",
+		"command": "workbench.action.moveEditorToBelowGroup" },
+
+
+	{ "key": "ctrl+shift+q",
+		"command": "workbench.action.toggleMaximizedPanel" },
+
+]

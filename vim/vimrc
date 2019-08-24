@@ -1,0 +1,54 @@
+"execute pathogen#infect()
+
+syntax on
+
+set hlsearch
+set tabstop=2 softtabstop=2 shiftwidth=2
+
+"set smarttab
+set autoindent
+set smartindent
+
+set noexpandtab
+set linebreak
+set colorcolumn=
+set nolist
+
+set noerrorbells
+set vb t_vb=
+
+set showmatch
+set backspace=indent,eol,start
+
+nnoremap ; :
+nnoremap fl :set number!<CR>:set list!<CR>:call ToggleColorColumn()<CR>
+nnoremap fh :set hlsearch! hlsearch?<CR>
+nnoremap fw :set wrap! wrap?<CR>
+
+nnoremap <Enter> o<ESC>k
+nnoremap <S-Enter> O<ESC>j
+
+inoremap jj <ESC>
+
+nmap K :Man 3 <cword><CR>
+
+
+"autocmd FileType python nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
+
+
+set listchars=tab:>~,trail:.,eol:$
+
+
+"runtime ftplugin/man.vim
+
+
+"function! ToggleColorColumn()
+	"if &colorcolumn == ''
+		"set colorcolumn=101
+		"echo "marking column @" &colorcolumn
+	"else
+		"set colorcolumn=
+		"echo "unset column highlighting"
+	"endif
+"endfunction
+
